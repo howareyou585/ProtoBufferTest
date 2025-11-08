@@ -129,11 +129,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BaseOperate.cpp" />
     <ClCompile Include="ProtoDemo.cpp" />
     <ClCompile Include="sample.pb.cc" />
+    <ClCompile Include="Serialize.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BaseOperate.h" />
     <ClInclude Include="sample.pb.h" />
+    <ClInclude Include="Serialize.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="sample.proto" />
