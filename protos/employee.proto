@@ -1,0 +1,12 @@
+syntax = "proto3";
+message Employee
+{
+  // 姓名
+  string name = 1;
+  // 年龄
+  int32 age = 2;
+  // 薪资
+  double salary = 3;
+  // 性别
+  bool gender = 4;
+}

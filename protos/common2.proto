@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package foo.bar2;
+message Information
+{
+	string info_id1 = 1;
+	string info_id2 = 2;
+}

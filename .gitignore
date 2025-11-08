@@ -1,0 +1,12 @@
+﻿################################################################################
+# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+################################################################################
+
+/.vs
+/ProtoDemo/x64
+/ProtoDemo/ProtoDemo/x64/Release
+/ProtoDemo/ProtoDemo/x64/Debug
+/ProtoDemo/.vs/ProtoDemo/v17
+/ProtoDemo/.vs/ProtoDemo/FileContentIndex
+/ProtoDemo/ProtoDemo.vcxproj.filters
+/ProtoDemo/ProtoDemo.vcxproj.user

@@ -1,0 +1,9 @@
+syntax = "proto3";
+import "common1.proto";
+import "common2.proto";
+message Message
+{
+	// 通过包名访问 Message 类型
+	 foo.bar1.Information info1 = 1;
+	 foo.bar2.Information info2 = 2;
+}

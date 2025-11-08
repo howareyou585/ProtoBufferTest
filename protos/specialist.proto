@@ -1,0 +1,11 @@
+syntax = "proto3";
+// 导入 employee.proto 文件
+import "employee.proto";
+message Specialist
+{
+	string name  =1;
+	int32 age = 2;
+	// 使用其他 employee.proto 定义的数据类型
+	Employee employee = 3;
+
+}

@@ -1,0 +1,27 @@
+syntax = "proto3";
+message Other
+{
+	int32 v1 = 1;
+	int32 v2 = 2;
+}
+
+enum Week
+{
+	// 第一个枚举项的值必须为 0，在 proto2 中没有此限制，这是因为对于枚举类型默认值是 0
+	// 后续的枚举项值可以是任意的、不重复的
+	Mon = 0;
+	Tue = 3;
+	Wed = 4;
+    Thu = 5;
+    Fri = 6;
+    Sat = 7;
+    Sun = 8;
+}
+message Developer
+{
+	string name =1;
+	Week week = 2;
+	repeated int32 list = 3;//vector<int>
+	map<string,int32>map = 4;
+	Other other =5;
+}
