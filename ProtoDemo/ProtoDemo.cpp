@@ -60,18 +60,28 @@ void test03()
     {
         cout <<"没有查找到键值为ccc的项" << endl;
     }
-    /*auto pos1 = demo.mutable_mpsi()->find("bbb");
+    auto pos1 = demo.mutable_mpsi()->find("bbb");
     if (pos1 != demo.mutable_mpsi()->end())
     {
         
+        pos1->second = 500;
         cout << pos1->first << "," << pos1->second << endl;
-    }*/
+        
+    }
     //demo.mutable_mpsi()->erase(pos1);
     for (auto it = demo.mpsi().begin(); it != demo.mpsi().end(); it++)
     {
         cout << it->first << " " << it->second << " ";
     }
     cout << endl;
+}
+// 4. 自定义类型
+void test04()
+{
+    Demo demo;
+    demo.mutable_cust()->set_attr1(123);
+    demo.mutable_cust()->set_attr2(456);
+    cout << "demo.cust().attr1() = " << demo.cust().attr1() << "  " <<"demo.cust().attr2() = "<<demo.cust().attr2() << endl;
 }
 int main()
 {
@@ -81,6 +91,8 @@ int main()
     test02();
     cout << "-------------------------invoke test03----------------------------------" << endl;
     test03();
+    cout << "-------------------------invoke test04----------------------------------" << endl;
+    test04();
     std::cout << "Hello World!\n";
 }
 
