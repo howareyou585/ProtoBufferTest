@@ -130,16 +130,21 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BaseOperate.cpp" />
+    <ClCompile Include="encode.pb.cc" />
+    <ClCompile Include="EncodeDemo.cpp" />
     <ClCompile Include="ProtoDemo.cpp" />
     <ClCompile Include="sample.pb.cc" />
     <ClCompile Include="Serialize.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseOperate.h" />
+    <ClInclude Include="encode.pb.h" />
+    <ClInclude Include="EncodeDemo.h" />
     <ClInclude Include="sample.pb.h" />
     <ClInclude Include="Serialize.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="encode.proto" />
     <None Include="sample.proto" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

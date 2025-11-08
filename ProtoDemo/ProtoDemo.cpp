@@ -5,6 +5,7 @@
 #include "sample.pb.h"
 #include "BaseOperate.h"
 #include "Serialize.h"
+#include "EncodeDemo.h"
 using namespace std;
 
 int main()
@@ -19,7 +20,12 @@ int main()
     cout << "-------------------------invoke test04----------------------------------" << endl;
     test04();
 #endif // 0
+
+#if 0
     serialize();
+#endif // 0
+    
+    encode();
     std::cout << "Hello World!\n";
 }
 
